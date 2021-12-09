@@ -1,0 +1,62 @@
+header{
+    position: absolute;
+    top:0;
+}
+
+.about{
+    margin:70px auto;
+    cursor:default;
+}
+.box3{
+    margin:70px auto;
+    background:rgba(26, 26, 26, 0.904);
+}
+.about img{
+    max-width: 500px;
+    border-radius: 20px;
+    margin: 40px;
+}
+.about img{
+    margin-right:0;
+    padding: 15px;
+}
+.missonbox{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FFF7E7;
+    cursor:default;
+    padding:20px 100px 100px 100px;
+}
+.smallbox{
+    margin-bottom: 50px;
+    background-size: cover;
+    cursor:default;
+}
+.mission{
+    background-color: aliceblue;
+}
+.smallbox:hover .mission{
+    background-color: #f49619;
+color: var(--veryLightGray);
+
+}
+
+@media screen and (max-width: 850px){
+    .about .image{
+        display: initial;
+    }
+    .about img{
+        width: 300px;
+        margin: auto;
+        transform: translateX(140px);
+    }
+    .box3{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+@media screen and (max-width: 650px){
+    .missonbox{
+        padding:0;
+    }
+}
